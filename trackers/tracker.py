@@ -35,4 +35,4 @@ class Tracker:
             #Track Objects
             detection_with_tracks = self.tracker.update_with_detections(detection_supervision)
 
-            print(detection_supervision)
+            print(detection_with_tracks)
