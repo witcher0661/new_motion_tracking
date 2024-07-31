@@ -14,7 +14,6 @@ class Tracker:
         for i in range(0,len(frames),batch_size):
             detections_batch = self.model.predict(frames[i:i+batch_size],conf=0.1)
             detections += detections_batch
-            break
         return detections
 
     def get_object_tracks(self, frames, read_from_stub=False, stub_path=None):
