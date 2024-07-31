@@ -63,4 +63,4 @@ class Tracker:
                 if cls_id == cls_names_inv['ball']:
                     tracks["ball"][frame_num][1] = {"bbox":bbox}
 
-            print(detection_with_tracks)
+        return tracks
