@@ -6,7 +6,7 @@ def main():
     video_frames = read_video(r"C:\Users\44780\Documents\new_motion_tracking\input_videos\counter_attack.mp4")
     
     #Initialize Tracker
-    tracker = Tracker(r"C:\Users\44780\Documents\new_motion_tracking\models\best.pt")
+    tracker = Tracker(r"C:\Users\44780\Documents\new_motion_tracking\models\best.pt", conf_threshold=0.25, iou_threshold=0.45)
 
     tracks = tracker.get_object_tracks(video_frames,
                                        read_from_stub=True,
