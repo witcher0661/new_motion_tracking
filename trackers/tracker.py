@@ -95,6 +95,8 @@ class Tracker:
             thickness=2,
             lineType=cv2.LINE_4
         )
+
+        return frame
     
     def draw_annotations(self,video_frames, tracks,team_ball_control):
         output_video_frames= []
