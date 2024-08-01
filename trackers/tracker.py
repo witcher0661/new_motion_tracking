@@ -111,3 +111,7 @@ class Tracker:
             for track_id, player in player_dict.items():
                 color = player.get("team_color",(0,0,255))
                 frame = self.draw_ellipse(frame, player["bbox"],color, track_id)
+
+            output_video_frames.append(frame)
+
+        return output_video_frames
